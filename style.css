@@ -8,7 +8,7 @@ body{
 .main{
     /* border: 3px solid blue; */
     width: 400px;
-     height: 270px;
+     height: 300px;
      margin: 0 auto;
      background: linear-gradient(rgb(25, 27, 27),rgb(117, 115, 115),rgb(7, 75, 52));
      display: flex;
@@ -18,9 +18,14 @@ body{
     outline-style: none;
     
     }
+    @media screen and (max-width: 500px) {
+      .main{
+        
+      }
+    }
   
   #result{
-       width: 383px;
+       width: 395px;
        color: rgb(73, 1, 1);
        border-radius:10px ;
        outline-style: none;
@@ -31,27 +36,27 @@ body{
   }
   .clear{
     width: 400px;
-      margin-top: 5px;
+      margin-top: 4x;
       background-color: rgb(49, 49, 48);
       color: wheat;
       height: 30px;
-      font-size: 23px;
+      font-size: 20px;
       border-radius: 10px;
       outline-style: none;
   }
-  .btn{
+  .Btn{
+     color: wheat ;
     border-radius: 10px;
     outline-style: none;
-      width: 85px;
-      /* background-color: black; */
-      color: rgb(248, 239, 237);
+      width: 86px;
       margin: 5px;
       background: linear-gradient(darkblue,rgb(39, 25, 25),rgb(243, 219, 8));
-      height: 30px;
+      height: 35px;
       font-size: 23px;
+      
   }
   .bottom{
-      width: 178px;
+      width: 168px;
       background:linear-gradient(rgb(51, 46, 46),rgb(23, 34, 23),rgb(116, 41, 53));
       color: rgb(139, 136, 136);
       margin: 10px;
@@ -92,8 +97,22 @@ body{
 
 
 
+.history{
+        
+        width: 395px;
+        height: 200px;
+        margin: auto;
+        margin-top: 2px;
+        display: flex;
+        justify-content: center;
+        
+}
 
-
+.hbtn{
+      width: 395px;
+      border-radius: 20px;
+      background-color: yellow;
+}
 
 
 

@@ -5,34 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculater</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 <body>  
+
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12">
     
          <div class="main">
-            <div>
+            <div  class=" calculatorForm">
                 <input id="result" placeholder="calculate" class="input"   onfocus="this.style.backgroundColor='lightblue'" type="text">
             </div>
-         <div><button id="clean"   onclick="clearRes()" class="clear">c</button></div>
+         <div><button id="clean"   onclick="clearRes()" class="clear">C</button></div>
 
          <div>
-     <button class="btn"  onclick="getNum('7')">7</button>
-     <button class="btn"  onclick="getNum('8')">8</button>
-     <button class="btn" onclick="getNum('9')" >9</button>
-     <button class="btn" onclick="getNum('*')">*</button>
+     <button class="Btn"  onclick="getNum('7')">7</button>
+     <button class="Btn"  onclick="getNum('8')">8</button>
+     <button class="Btn" onclick="getNum('9')" >9</button>
+     <button class="Btn" onclick="getNum('*')">*</button>
 
          </div>
          <div>
-            <button class="btn" onclick="getNum('4')">4</button>
-            <button class="btn"onclick="getNum('5')">5</button>
-            <button class="btn" onclick="getNum('6')">6</button>
-            <button class="btn" onclick="getNum('-')">-</button>
+            <button class="Btn" onclick="getNum('4')">4</button>
+            <button class="Btn"onclick="getNum('5')">5</button>
+            <button class="Btn" onclick="getNum('6')">6</button>
+            <button class="Btn" onclick="getNum('-')">-</button>
        
                 </div>
                 <div>
-                    <button class="btn" onclick="getNum('1')">1</button>
-                    <button class="btn" onclick="getNum('2')">2</button>
-                    <button class="btn" onclick="getNum('3')">3</button>
-                    <button class="btn" onclick="getNum('+')">+</button>
+                    <button class=" Btn" onclick="getNum('1')">1</button>
+                    <button class=" Btn" onclick="getNum('2')">2</button>
+                    <button class=" Btn" onclick="getNum('3')">3</button>
+                    <button class=" Btn" onclick="getNum('+')">+</button>
                
                         </div>
                         <div>
@@ -40,12 +46,35 @@
                             <button class="bottom" onclick="abc()">=</button>
                            
                         </div>
+                     </div>
+                     </div>
+                     </div>
 
-         </div>
+
+                          <section>
+                                <div class="history">
+                                 <div><button type="button" class="btn btn-primary hbtn btn-lg">History</button></div>
+                                 <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                    <ul >
+                                            <li><button class="clears" onclick="del()">Clear </button><ul id="list1"></ul></li>
+                                                                </ul>
+                    
+                                    </div>
+                                  </div>
+                                </div>
+                          </section>
+
+
+
+
+
+
+
+
+                     </div>
         
-        
-        
-          <img src="images/download.jpg"  onmouseover="make()" alt="" id="pic">
+          
         
          
         
@@ -62,7 +91,8 @@
         
         
         
-        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         
         
          <script src="cal.js"></script>
